@@ -1,0 +1,96 @@
+@font-face {
+  font-family: FirstFont;
+  src: url(./font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf);
+  font-display: auto;
+}
+
+@font-face {
+  font-family: SecondFont;
+  src: url(./font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitleBody;
+  src: url(./font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf);
+}
+
+@font-face {
+  font-family: TextBody;
+  src: url(./font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf
+);
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* 
+Header
+ */
+.header {
+  text-align: center;
+}
+
+#header__h1 {
+  font: 2em FirstFont;
+}
+
+.header__text {
+  font: 1.4em SecondFont;
+}
+
+/* 
+Fin de header
+
+Body
+ */
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px;
+  width: 90vw;
+  border: 2px solid #ffffff8f;
+  border-radius: 15px;
+}
+
+.figura {
+  margin: 10px;
+  padding: 0px 15px 15px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.figura__h2 {
+  font: 1.5em TitleBody;
+  text-align: center;
+}
+
+.figura__cuadrado-form,
+.figura__triangulo-form,
+.figura__circulo-form {
+  font: 1.2em TextBody;
+}
+
+.container-input {
+  margin: 10px;
+}
+
+.input {
+  width: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+  background: #7974742a;
+  color: #000000;
+}
+
+button {
+  margin: 5px;
+  border: 1px solid #0000008f;
+  background: #7974742a;
+  color: #000000;
+  border-radius: 5px;
+}

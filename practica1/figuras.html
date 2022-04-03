@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles_figuras.css">
+  <title>Figuras geométricas</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="header__h1">Figuras geométricas</h1>
+    <p class="header__text">Este es el primer taller del curso práctico de JavaScript.</p>
+  </header>
+  <main class="body">
+    <!-- Cuadrado -->
+    <section class="figura">
+      <h2 class="figura__h2">Calcula el área y perímetro de un cudrado</h2>
+      <form action="" class="figura__cuadrado-form">
+        <div class="container-input">
+          <label for="figura__cuadrado-form__input">
+            Escribe cuánto mide el lado del cuadrado:
+          </label>
+
+          <div>
+            <input class="input" id="figura__cuadrado-form__input" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular perímetro.
+        </button>
+
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular área.
+        </button>
+      </form>
+    </section>
+
+    <!-- Triangulo -->
+    <section class="figura">
+      <h2 class="figura__h2">Calcula el área de un triángulo</h2>
+      <form action="" class="figura__triangulo-form">
+        <!-- Altura -->
+        <div class="container-input">
+          <label for="figura__triangulo-form__input-altura">
+            Escribe cuánto mide la altura del triángulo:
+          </label>
+
+          <div>
+            <input class="input" id="figura__triangulo-form__input-altura" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <!-- Lado 1 -->
+        <div class="container-input">
+          <label for="figura__triangulo-form__input-lado-1">
+            Escribe cuánto mide el lado 1 del triángulo:
+          </label>
+
+          <div>
+            <input class="input" id="figura__triangulo-form__input-lado-1" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <!-- Lado 2 -->
+        <div class="container-input">
+          <label for="figura__triangulo-form__input-lado-2">
+            Escribe cuánto mide el lado 2 del triángulo:
+
+          </label>
+
+          <div>
+            <input class="input" id="figura__triangulo-form__input-lado-2" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <!-- Base -->
+        <div class="container-input">
+          <label for="figura__triangulo-form__input-base">
+            Escribe cuánto mide la base del triángulo:
+          </label>
+
+          <div>
+            <input class="input" id="figura__triangulo-form__input-base" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular perímetro.
+        </button>
+
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular área.
+        </button>
+      </form>
+    </section>
+
+    <!-- Circulo -->
+    <section class="figura">
+      <h2 class="figura__h2">Calcula el área y el perímetro de un círculo</h2>
+      <form action="" class="figura__circulo-form">
+        <div class="container-input">
+          <label for="figura__circulo-form__input-radio">
+            Escribe cuánto mide el radio del círculo:
+          </label>
+
+          <div>
+            <input class="input" id="figura__circulo-form__input-radio" type="number" placeholder="0"><span>cm</span>
+          </div>
+        </div>
+
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular perímetro.
+        </button>
+
+        <button type="button" onclick="calcularAreaCirculo()">
+          Calcular área.
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./figuras.js"></script>
+</body>
+
+</html>
