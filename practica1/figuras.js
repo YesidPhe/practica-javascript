@@ -75,9 +75,7 @@ function calcularPerimetroTriangulo() {
   const input2 = document.getElementById(
     "figura__triangulo-form__input-lado-2"
   );
-  const input3 = document.getElementById(
-    "figura__triangulo-form__input-base"
-  );
+  const input3 = document.getElementById("figura__triangulo-form__input-base");
   const lado1 = Number(input1.value);
   const lado2 = Number(input2.value);
   const base = Number(input3.value);
@@ -90,14 +88,32 @@ function calcularAreaTriangulo() {
   const input1 = document.getElementById(
     "figura__triangulo-form__input-altura"
   );
-  const input2 = document.getElementById(
-    "figura__triangulo-form__input-base"
-  );
-  const altura = input1.value;
-  const base = input2.value;
+  const input2 = document.getElementById("figura__triangulo-form__input-base");
 
-  const area = areaTriangulo(base, altura);
-  alert(`El área del triángulo es ${area}`);
+  if (input1.value == "") {
+    const lado1 = document.getElementById(
+      "figura__triangulo-form__input-lado-1"
+    );
+    const lado2 = document.getElementById(
+      "figura__triangulo-form__input-lado-2"
+    );
+
+    if ((lado1.value == lado2.value && input2.value != "")) {
+      const base = Number(input2.value);
+      const altura = Math.sqrt(Math.pow(lado1.value, 2) - (base / 2));
+
+      const area = areaTriangulo(base, altura);
+      alert(`El área del triángulo es ${area}`);
+    } else {
+      alert("No se han introducido los datos");
+    }
+  } else {
+    const altura = Number(input1.value);
+    const base = Number(input2.value);
+
+    const area = areaTriangulo(base, altura);
+    alert(`El área del triángulo es ${area}`);
+  }
 }
 
 //Círculo
