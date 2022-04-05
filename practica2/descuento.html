@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Porcentajes y descuentos</title>
 </head>
-<body>
-  <h1>Porcentajes y descuentos</h1>
 
+<body>
+  <header class="header">
+    <h1 id="header__h1"">Porcentajes y descuentos</h1>
+    <p class=" header__text">Este es el segundo taller de curso practico de JavaScript</p>
+  </header>
+
+  <main class="body">
+    <section class="form-discount">
+      <h2 id="form-discount__h2">Calcula el precio a pagar de tus productos con descuento.</h2>
+      <form action="">
+        <div class="form-discount__group">
+          <label for="input-price">Escribe el precio de tu producto:</label>
+          <input class="form-discount__group__input" id="input-price" type="number" placeholder="100" />
+        </div>
+
+        <div class="form-discount__group">
+          <label for="input-discount">Escribe el descuento de tu producto:</label>
+          <input class="form-discount__group__input" id="input-discount" type="number" placeholder="15" />
+        </div>
+
+        <div class="form-discount__group">
+          <label for="cupones">Cupones disponibles:</label>
+          <select name="" class="form-discount__group__cupon" id="cupones">
+            <option value="0">Ninguno</option>
+            <option value="25">Primera compra</option>
+            <option value="20">Christmas</option>
+            <option value="10">Vacaciones</option>
+          </select>
+        </div>
+
+        <button class="btn" type="button" onclick="calcular();">
+          Calcular el precio
+        </button>
+        <button class="btn" type="reset">Limpiar</button>
+      </form>
+
+      <div class="result">
+        <p class="result__text">Descuento: </p>
+        <p class="result__discount" id="discount">%</p>
+      </div>
+      
+      <div class="result">
+        <p class="result__text">Precio original: </p>
+        <p class="result__price" id="price">$</p>
+      </div>
+      
+      <div class="result">
+        <p class="result__text">Precio final: </p>
+        <p class="result__result-price" id="result-price">$</p>
+      </div>
+      
+      <div class="result">
+        <p class="result__text">Ahorro: </p>
+        <p class="result__save" id="save">$</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer__text bold">By @yesid_dn</p>
+    <p class="footer__text">Hecho con 💚 para platzi.</p>
+  </footer>
   <script src="./descuento.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,162 @@
+/* Fonts */
+
+@font-face {
+  font-family: FirstFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf);
+  font-display: auto;
+}
+
+@font-face {
+  font-family: SecondFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitleBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf);
+}
+
+@font-face {
+  font-family: TextBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf
+);
+}
+
+@font-face {
+  font-family: Important;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf
+);
+}
+
+@font-face {
+  font-family: FooterText;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+/* ============================================Styles==================================================== */
+/* ====================================================================================================== */
+
+/* Header */
+.header {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#header__h1 {
+  font: 2.5em FirstFont;
+}
+
+.header__text {
+  font: 1.4em SecondFont;
+}
+
+/* Body */
+body {
+  background: linear-gradient(#e66464, #7982ee);
+  color: #000000;
+  height: auto;
+}
+
+.form-discount {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  background: #be22ee;
+  border-radius: 20px;
+  box-shadow: #a50000 0px 0px 15px;
+}
+
+#form-discount__h2 {
+  font: 1.6em TitleBody;
+  text-align: center;
+}
+
+.form-discount__group {
+  font: 1.2em TextBody;
+  margin: 10px;
+}
+
+.form-discount__group__input {
+  width: 80px;
+  background: rgba(145, 152, 229, 0.616);
+  outline: none;
+  border-radius: 10px;
+}
+
+.form-discount__group__cupon {
+  /* width: 100px; */
+  background: rgba(145, 152, 229, 0.616);
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn {
+  background: rgba(145, 152, 229, 0.616);
+  outline: none;
+  border-radius: 10px;
+}
+
+.result {
+  border-radius: 15px;
+  background: rgba(145, 152, 229, 0.616);
+  margin: 10px;
+  padding: 0px 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.result__text {
+  font: 1.2em Important;
+}
+
+.result__price {
+  text-decoration: line-through;
+}
+
+.result__result-price {
+  font: 1.4em Important;
+  font-weight: bold;
+  color: #7b00ce;
+}
+
+.result__discount,
+.result__price,
+.result__price,
+.result__save {
+  font: 1.2em Important;
+  font-weight: bold;
+}
+
+/* ============================================Media Queries================================================ */
+.footer__text {
+  font: 1.2em FooterText;
+  text-align: center;
+  margin: 4px;
+}
+.bold{
+  font-weight: bold;
+}
+
+/* ============================================Media Queries================================================ */
+@media screen and (min-width: 500px) and (max-width:800px) {
+  .form-discount {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+  .form-discount {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form-discount {
+    width: 35%;
+    margin: 20px auto;
+  }
+}
