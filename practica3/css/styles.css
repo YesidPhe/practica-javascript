@@ -1,0 +1,70 @@
+/* Fonts */
+
+@font-face {
+  font-family: FirstFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf);
+  font-display: auto;
+}
+
+@font-face {
+  font-family: SecondFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitleBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf);
+}
+
+@font-face {
+  font-family: TextBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf
+);
+}
+
+@font-face {
+  font-family: Important;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf
+);
+}
+
+@font-face {
+  font-family: FooterText;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+/* ============================================Styles==================================================== */
+/* ====================================================================================================== */
+
+/* Header */
+.header {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.header__h1 {
+  font: 2.5em FirstFont;
+}
+
+.header__text {
+  font: 1.4em SecondFont;
+}
+
+/* Body */
+
+/* ============================================Media Queries================================================ */
+
+
+/* ============================================Media Queries================================================ */
+@media screen and (min-width: 500px) and (max-width:800px) {
+  
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+  
+}
+
+@media screen and (min-width: 1000px) {
+  
+}
