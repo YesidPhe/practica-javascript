@@ -5,20 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles_figuras.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/styles_figuras.css">
   <title>Figuras geométricas</title>
 </head>
 
 <body>
   <header class="header">
     <h1 id="header__h1">Figuras geométricas</h1>
+
+    <div class="box-container__header">
+      <div class="figure">
+        <div class="purple__bg">
+          <img src="./assets/img/square.png" alt="" class="triangle__icon">
+        </div>
+      </div>
+      <div class="figure">
+          <div class="purple__bg">
+            <img src="./assets/img/triangle.png" alt="" class="circle__icon">
+          </div>
+      </div>
+      <div class="figure">
+        <div class="purple__bg">
+          <img src="./assets/img/circle.png" alt="" class="square__icon">
+        </div>
+      </div>
+    </div>
+
     <p class="header__text">Este es el primer taller del curso práctico de JavaScript.</p>
   </header>
   <main class="body">
     <!-- Cuadrado -->
     <section class="figura">
       <h2 class="figura__h2">Calcula el área y perímetro de un cudrado</h2>
+
       <form action="" class="figura__cuadrado-form">
         <div class="container-input">
           <label for="figura__cuadrado-form__input">
@@ -37,7 +57,12 @@
         <button type="button" onclick="calcularAreaCuadrado()">
           Calcular área.
         </button>
+
       </form>
+
+      <figure class="figura__icon">
+        <img class="figura__icon__img" src="./assets/img/square.svg" alt="square">
+      </figure>
     </section>
 
     <!-- Triangulo -->
@@ -97,6 +122,10 @@
           Calcular área.
         </button>
       </form>
+
+      <figure class="figura__icon">
+        <img class="figura__icon__img" src="./assets/img/triangle.svg" alt="square">
+      </figure>
     </section>
 
     <!-- Circulo -->
@@ -121,6 +150,10 @@
           Calcular área.
         </button>
       </form>
+
+      <figure class="figura__icon">
+        <img class="figura__icon__img" src="./assets/img/oval.svg" alt="square">
+      </figure>
     </section>
   </main>
 
