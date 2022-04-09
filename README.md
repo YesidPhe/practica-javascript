@@ -1,6 +1,5 @@
 # practica-javascript
-
-...
+- By @yesid_dn
 
 ## Taller #1: figuras geométricas
 
