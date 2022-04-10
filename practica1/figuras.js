@@ -98,9 +98,11 @@ function calcularAreaTriangulo() {
       "figura__triangulo-form__input-lado-2"
     );
 
-    if ((lado1.value == lado2.value && input2.value != "")) {
+    if (lado1.value == lado2.value && input2.value != "") {
       const base = Number(input2.value);
-      const altura = Math.sqrt(Math.pow(lado1.value, 2) - (base / 2));
+      const altura = Math.sqrt(
+        Math.pow(lado1.value, 2) - Math.pow(base, 2) / 4
+      );
 
       const area = areaTriangulo(base, altura);
       alert(`El área del triángulo es ${area}`);
