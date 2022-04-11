@@ -14,6 +14,43 @@
     <p class="header__text">Este es el tercer taller del curso practico de JavaScript</p>
   </header>
 
+  <main class="body">
+    <section class="form">
+      <h2 id="form__h2">Calcular la moda de una lista de números.</h2>
+      <form action="">
+        <div class="form__group">
+          <label for="number">Ingrese un número y de click en "Agregar"</label>
+          <input type="number" class="form__group__input-number" id="number">
+        </div>
+  
+        <button class="btn" type="button" onclick="agregarNumero();">
+          Agregar
+        </button>
+        <button class="btn" type="button" onclick="calcularModa();">
+          Calcular moda
+        </button>
+        <button class="btn" type="button" onclick="reiniciar();">
+          Reiniciar proceso
+        </button>
+      </form>
+  
+      <div class="result">
+        <p class="result__text">Números: </p>
+        <p class="result__number" id="result-number">Ejemplo: 2, 2, 1, 4, 3, 5, 2, 2, 2, 1, 3, 1</p>
+      </div>
+  
+      <div class="result">
+        <p class="result__text">La moda es: </p>
+        <p class="result__number" id="result-moda"> Ejemplo: 2, se repite 5 veces.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="footer__text bold">By @yesid_dn</p>
+    <p class="footer__text">Hecho con 💚 para platzi.</p>
+  </footer>
+
   <script src="./moda.js"></script>
 </body>
 </html>

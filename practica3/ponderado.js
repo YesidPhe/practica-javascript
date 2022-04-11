@@ -1,5 +1,5 @@
-var notas = [];
-var totalNotas = 0;
+let notas = [];
+let totalNotas = 0;
 
 function getMateria() {
   const input1 = document.getElementById("materia");
@@ -19,10 +19,10 @@ function getPuntaje() {
 
 function writeAll() {
   const writeMateria = document.getElementById("result-materia");
-  writeMateria.innerHTML = notas[notas.length - 1].materia;
+  writeMateria.innerText = notas[notas.length - 1].materia;
 
   const writePuntaje = document.getElementById("result-puntaje");
-  writePuntaje.innerHTML = notas[notas.length - 1].puntaje;
+  writePuntaje.innerText = notas[notas.length - 1].puntaje;
 }
 
 function agregarNotas() {
@@ -38,8 +38,8 @@ function reiniciar() {
   notas = [];
   totalNotas = 0;
 
-  document.getElementById("result-materia").innerHTML = "Ejemplo: Ciencias";
-  document.getElementById("result-puntaje").innerHTML = "Ejemplo: 67";
+  document.getElementById("result-materia").innerText = "Ejemplo: Ciencias";
+  document.getElementById("result-puntaje").innerText = "Ejemplo: 67";
 }
 
 function calcularPonderado() {
@@ -49,7 +49,7 @@ function calcularPonderado() {
 
   const ponderado = totalNotas / notas.length;
   const writePonderado = document.getElementById("result-ponderado");
-  writePonderado.innerHTML = ponderado;
+  writePonderado.innerText = ponderado;
 }
 
 //Otra forma de hacerlo:

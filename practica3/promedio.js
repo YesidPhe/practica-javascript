@@ -1,4 +1,4 @@
-var lista = [];
+let lista = [];
 
 function agregarNumero() {
   const inputNumer = document.getElementById("number");
@@ -6,7 +6,7 @@ function agregarNumero() {
   lista.push(number);
 
   const writeNumber = document.getElementById("result-number");
-  writeNumber.innerText = lista.join(' + ');
+  writeNumber.innerText = lista.join(" + ");
 }
 
 function calcularPromedio() {
@@ -16,17 +16,14 @@ function calcularPromedio() {
   //   sumaLista = sumaLista + lista[i];
   // }
 
-  const sumaLista = lista.reduce(
-    function (valorAcumulado, nuevoElemento) {
-      return valorAcumulado + nuevoElemento;
-    }
-  )
+  const sumaLista = lista.reduce(function (valorAcumulado, nuevoElemento) {
+    return valorAcumulado + nuevoElemento;
+  });
 
   const promedioLista = sumaLista / lista.length;
 
   const writePromedio = document.getElementById("result-promedio");
   writePromedio.innerText = promedioLista;
-  
 }
 
 //Para reduce

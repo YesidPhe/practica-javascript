@@ -53,9 +53,8 @@
 
 /* Body */
 body {
-  background: linear-gradient(#e66464, #7982ee);
+  background: linear-gradient(#e66464, #7982ee) fixed;
   color: #000000;
-  height: auto;
 }
 
 .form {

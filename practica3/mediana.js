@@ -1,5 +1,22 @@
 let mediana;
-const lista = [200, 100, 500, 300, 100000, 250];
+let lista = [];
+
+function reiniciar() {
+  notas = [];
+  totalNotas = 0;
+
+  document.getElementById("result-number").innerText = "Ejemplo: 12, 13, 14";
+  document.getElementById("result-mediana").innerText = "Ejemplo: 13";
+}
+
+function agregarNumero() {
+  const inputNumer = document.getElementById("number");
+  const number = Number(inputNumer.value);
+  lista.push(number);
+
+  const writeNumber = document.getElementById("result-number");
+  writeNumber.innerText = lista.join(", ");
+}
 
 function esPar(number) {
   if (number % 2 == 0) {
@@ -32,11 +49,12 @@ function calcularMedia(lista) {
 //   return lista;
 // }
 
-function calcularMediana(lista) {
+function calcularMediana() {
   // lista = ordenarLista(lista);
   lista = lista.sort(function (a, b) {
     return a - b;
   });
+
   const mitadLista = parseInt(lista.length / 2);
 
   if (esPar(lista.length)) {
@@ -45,13 +63,15 @@ function calcularMediana(lista) {
 
     const promedioElemento1y2 = calcularMedia([elemento1, elemento2]);
     mediana = promedioElemento1y2;
-    return mediana;
+
+    const writeMediana = document.getElementById("result-mediana");
+    writeMediana.innerText = mediana;
   } else {
     mediana = lista[mitadLista];
-    return mediana;
+    const writeMediana = document.getElementById("result-mediana");
+    writeMediana.innerText = mediana;
   }
 }
-
 
 //Documentacion de arr.sort()
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
