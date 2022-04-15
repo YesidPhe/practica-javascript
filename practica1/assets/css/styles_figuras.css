@@ -113,7 +113,7 @@ Body
   padding: 0px 15px 15px;
   border: 1px solid #818181;
   border-radius: 10px 40px 10px 10px;
-  background: #0343a3d8;
+  background: rgba(13, 69, 253, 0.5);
 }
 
 .figura__h2 {
@@ -147,7 +147,7 @@ Body
   margin: 5px;
   border-radius: 5px;
   outline: none;
-  background: #9300a085;
+  background: rgba(128, 3, 211, 0.596);
   color: #ffffff;
 }
 
@@ -155,7 +155,7 @@ button {
   margin: 5px;
   padding: 5px;
   border: 1px solid #0000008f;
-  background: #7d0088;
+  background: rgba(128, 3, 211, 0.596);
   color: #ffffff;
   border-radius: 5px;
 }
