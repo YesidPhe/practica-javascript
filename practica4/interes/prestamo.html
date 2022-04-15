@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Prestamo</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__h1">Intereses a pagar por un prestamo</h1>
+    <p class="header__text">Este es el tercer taller del curso practico de JavaScript</p>
+  </header>
+
+  <main class="body">
+    <section class="form">
+      <h2 id="form__h2">Calcular el interes a pagar</h2>
+      <form action="">
+        <div class="form__group">
+          <label for="monto">Ingrese un monto total del prestamo: ($COP)</label>
+          <input type="number" class="form__group__input" id="monto" placeholder="0">
+        </div>
+
+        <div class="form__group">
+          <label for="interes">Seleccione el interes: (%)</label>
+          <select name="" class="form__group__input" id="interes">
+            <option hidden selected>Interes</option>
+            <option value="0.5">0.5</option>
+            <option value="0.8">0.8</option>
+            <option value="0.9">0.9</option>
+            <option value="1">1</option>
+            <option value="1.1">1.1</option>
+            <option value="1.2">1.2</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label for="tiempo-años">Tiempo (años):</label>
+          <input type="number" class="form__group__input" id="tiempo-años">
+        </div>
+
+        <div class="form__group">
+          <label for="tiempo-meses">Tiempo (meses):</label>
+          <input type="number" class="form__group__input" id="tiempo-meses">
+        </div>
+
+        <button class="btn" type="button" onclick="calcular();">
+          Calcular
+        </button>
+        <button class="btn" type="button" onclick="reset();">
+          Reset
+        </button>
+      </form>
+
+      <div class="result">
+        <p class="result__text">Monto total: </p>
+        <p class="result__number" id="prestamo-total">Ejemplo: $1'500.000</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Interes al: </p>
+        <p class="result__number" id="result-interes">Ejemplo: 0.9%</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Tiempo (meses): </p>
+        <p class="result__number" id="result-tiempo">Ejemplo: 24 mses</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Interes a pagar: </p>
+        <p class="result__number" id="result-interes-mensual">Ejemplo: $13.500</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Interes total: </p>
+        <p class="result__number" id="result-interes-total-monto">Ejemplo: $324.000</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Cuota a pagar (sin interes): </p>
+        <p class="result__number" id="result-cuotas">Ejemplo: $62.500</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Cuota total a pagar (cada mes): </p>
+        <p class="result__number" id="result-cuota-total">Ejemplo: $76.000</p>
+      </div>
+
+      <div class="result">
+        <p class="result__text">Total a pagar (prestamo pagado): </p>
+        <p class="result__number" id="result-pago-total">Ejemplo: $1'824.000</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer__text bold">By @yesid_dn</p>
+    <p class="footer__text">Hecho con 💚 para platzi.</p>
+  </footer>
+
+  <script src="./prestamo.js"></script>
+</body>
+
+</html>

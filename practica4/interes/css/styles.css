@@ -1,0 +1,148 @@
+/* Fonts */
+
+@font-face {
+  font-family: FirstFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-SemiBold.ttf);
+  font-display: auto;
+}
+
+@font-face {
+  font-family: SecondFont;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitleBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf);
+}
+
+@font-face {
+  font-family: TextBody;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf
+);
+}
+
+@font-face {
+  font-family: Important;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Medium.ttf
+);
+}
+
+@font-face {
+  font-family: FooterText;
+  src: url(../assets/font/Yanone_Kaffeesatz/static/YanoneKaffeesatz-Regular.ttf);
+}
+
+/* ============================================Styles==================================================== */
+/* ====================================================================================================== */
+
+/* Header */
+.header {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.header__h1 {
+  font: 2.5em FirstFont;
+}
+
+.header__text {
+  font: 1.4em SecondFont;
+}
+
+/* Body */
+body {
+  background: linear-gradient(#04d6a9 0%, #20ffec 100%) fixed;
+  color: #000000;
+}
+
+.form {
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgb(131, 131, 131) 0px 0px 20px;
+}
+
+#form__h2 {
+  font: 1.6em TitleBody;
+  text-align: center;
+}
+
+.form__group {
+  font: 1.2em TextBody;
+  margin: 10px;
+}
+
+.form__group__input {
+  width: 100px;
+  margin: 10px;
+  background: rgba(32, 255, 236, 0.3);
+  outline: none;
+  border-radius: 10px;
+}
+
+.btn {
+  background: rgba(32, 255, 236, 0.3);
+  outline: none;
+  border-radius: 10px;
+}
+
+.result {
+  border-radius: 15px;
+  background: rgba(145, 152, 229, 0.616);
+  margin: 10px;
+  padding: 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.result__text {
+  font: 1.2em Important;
+}
+
+.result__number {
+  font: 1.3em Important;
+  font-weight: bold;
+  color: #349bf0;
+  text-align: right;
+}
+
+/* ============================================Media Queries================================================ */
+.footer__text {
+  font: 1.2em FooterText;
+  text-align: center;
+  margin: 4px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ============================================Media Queries================================================ */
+
+
+/* ============================================Media Queries================================================ */
+@media screen and (min-width: 500px) and (max-width:800px) {
+  .form {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+  .form {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form {
+    width: 35%;
+    margin: 20px auto;
+  }
+}
