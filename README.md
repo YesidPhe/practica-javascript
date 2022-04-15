@@ -1,5 +1,4 @@
 # practica-javascript
-- By @yesid_dn
 
 ## Taller #1: figuras geométricas
 
@@ -21,3 +20,16 @@
 - Segundo paso: implementar las formulas en JS
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
+
+## Taller #4: análisis estadístico
+
+- Primer paso: definir las fórmulas
+- Segundo paso: implementar las formulas en JS
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JS con HTML
+
+...
+
+**Made by [@yesid_dn](https://github.com/YesidPhe)**
+
+**Hecho con 💚 para Platzi.**
