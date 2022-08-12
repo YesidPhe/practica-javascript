@@ -33,10 +33,10 @@ El repositorio del Curso Práctico de JavaScript del año 2022 lo encontrarás e
 ---
 Si tienes alguna duda o sugerencia, no dudes en contactarme en mis redes sociales.
 
-<center>
+<div style="text-align: center">
 
 Made with 🤍, by[@yesid_dn](https://twitter.com/yesid_dn)
 
 **Hecho con 💚 para Platzi.**
 
-</center>
+</div>
